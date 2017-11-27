@@ -14,6 +14,7 @@
 		3A00DDA31FC3B84C00697045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A00DDA21FC3B84C00697045 /* Assets.xcassets */; };
 		3A00DDA61FC3B84C00697045 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A00DDA41FC3B84C00697045 /* LaunchScreen.storyboard */; };
 		3A00DDA91FC3B84C00697045 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A00DDA81FC3B84C00697045 /* main.m */; };
+		3AF5EA2B1FC72DBA0005E8A8 /* MyDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF5EA2A1FC72DBA0005E8A8 /* MyDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		3A00DDA51FC3B84C00697045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A00DDA71FC3B84C00697045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A00DDA81FC3B84C00697045 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AF5EA291FC72DBA0005E8A8 /* MyDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDataController.h; sourceTree = "<group>"; };
+		3AF5EA2A1FC72DBA0005E8A8 /* MyDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 		3A00DD951FC3B84C00697045 /* sc02 - CoreDataTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				3AF5EA291FC72DBA0005E8A8 /* MyDataController.h */,
+				3AF5EA2A1FC72DBA0005E8A8 /* MyDataController.m */,
 				3A00DD961FC3B84C00697045 /* AppDelegate.h */,
 				3A00DD971FC3B84C00697045 /* AppDelegate.m */,
 				3A00DD991FC3B84C00697045 /* ViewController.h */,
@@ -149,6 +154,7 @@
 				3A00DD9B1FC3B84C00697045 /* ViewController.m in Sources */,
 				3A00DDA91FC3B84C00697045 /* main.m in Sources */,
 				3A00DD981FC3B84C00697045 /* AppDelegate.m in Sources */,
+				3AF5EA2B1FC72DBA0005E8A8 /* MyDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

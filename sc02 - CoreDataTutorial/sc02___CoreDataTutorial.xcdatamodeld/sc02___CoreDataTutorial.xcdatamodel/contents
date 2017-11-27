@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13241" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="BeiDarkSide" representedClassName="BeiDarkSide" parentEntity="Beings" syncable="YES" codeGenerationType="class"/>
+    <entity name="BeiDroid" representedClassName="BeiDroid" parentEntity="Beings" syncable="YES" codeGenerationType="class"/>
+    <entity name="BeiForce" representedClassName="BeiForce" parentEntity="Beings" syncable="YES" codeGenerationType="class"/>
+    <entity name="Beings" representedClassName="Beings" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="race" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Planets" inverseName="newRelationship" inverseEntity="Planets" syncable="YES"/>
+    </entity>
+    <entity name="Equ_Vessel" representedClassName="VesselsMO" parentEntity="Equipment" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="movieAppearance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pilot" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Equ_Weapons" representedClassName="WeaponsMO" parentEntity="Equipment" syncable="YES" codeGenerationType="class">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="movieAppearance" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Equipment" representedClassName="PowersMO" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Planets" representedClassName="PlanetsMO" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="race" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sector" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Beings" inverseName="newRelationship" inverseEntity="Beings" syncable="YES"/>
+    </entity>
+    <entity name="Species" representedClassName="SpeciesMO" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="Planets" positionX="-533" positionY="-153" width="128" height="88"/>
+        <element name="Species" positionX="-362" positionY="-126" width="128" height="43"/>
+        <element name="Equ_Weapons" positionX="70" positionY="54" width="128" height="88"/>
+        <element name="Equ_Vessel" positionX="-81" positionY="135" width="128" height="88"/>
+        <element name="BeiForce" positionX="-306" positionY="92" width="128" height="43"/>
+        <element name="Equipment" positionX="-81" positionY="-37" width="128" height="73"/>
+        <element name="Beings" positionX="-560" positionY="-18" width="128" height="88"/>
+        <element name="BeiDarkSide" positionX="-387" positionY="171" width="128" height="45"/>
+        <element name="BeiDroid" positionX="-551" positionY="189" width="128" height="45"/>
+    </elements>
 </model>
